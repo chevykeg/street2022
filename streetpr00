@@ -28,8 +28,8 @@ firew1 ()	{
 
 # Function for iptables rules (CentOS 7, Debian, Ubuntu, Fedora)
 firew2 ()	{
-	# Opening default Squid port 3301 for clients to connect
-	iptables -I INPUT -p tcp --dport 3301 -j ACCEPT
+	# Opening default Squid port 3302 for clients to connect
+	iptables -I INPUT -p tcp --dport 3302 -j ACCEPT
 	# Saving firewall rules
 	iptables-save
 }
